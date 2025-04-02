@@ -18,17 +18,29 @@
                     <img src="images/Logo.svg">
                     <span>MyPay</span>
                 </div>
-                <div class="Link">
+                <div class="Navigation">
+                    <ul class="anchor-navigation">
+                        <li class="active"><a class="anchor-scroll" href="#Home">Home</a></li>
+                        <li><a class="anchor-scroll" href="#Services">Services</a></li>
+                        <li><a class="anchor-scroll" href="#Menu">Menu</a></li>
+                        <li><a class="anchor-scroll" href="#Gallery">Gallery</a></li>
+                        <li><a class="anchor-scroll" href="#Contact">Contact us</a></li>
+                        <li><a href="http://mypaycafe.food4me.net/" target="_blank">
+                        Order Now
+                    </a></li>
+                    </ul>
+                </div>
+                <!-- <div class="Link">
                     <a href="javascript:void(0);">
                         MyOrdering
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
 
     <section>
-        <div class="SliderArea">
+        <div class="SliderArea" id="Home">
             <div id="Slider" class="carousel slide" data-ride="carousel"> 
                 <div class="carousel-inner">
                     <div class="carousel-item active" style="background-image: url('images/Slider-1.jpg');">
@@ -39,7 +51,7 @@
                                 <p>Garlic Souce, Masterd Souce, Onion, Bread with 1 Liter Cold Drink</p>
                                 <h3>Order: +1 123456789</h3> 
                                 <h6><img src="images/Delivery.svg"> Free & Fast Delivery 24h</h6>
-                                <a href="">Order Now</a>
+                                <a href="http://mypaycafe.food4me.net/" target="_blank">Order Now</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +63,7 @@
                                 <p>Garlic Souce, Masterd Souce, Onion, Bread with 1 Liter Cold Drink</p>
                                 <h3>Order: +1 123456789</h3> 
                                 <h6><img src="images/Delivery.svg"> Free & Fast Delivery 24h</h6>
-                                <a href="">Order Now</a>
+                                <a href="http://mypaycafe.food4me.net/" target="_blank">Order Now</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +75,7 @@
                                 <p>Garlic Souce, Masterd Souce, Onion, Bread with 1 Liter Cold Drink</p>
                                 <h3>Order: +1 123456789</h3> 
                                 <h6><img src="images/Delivery.svg"> Free & Fast Delivery 24h</h6>
-                                <a href="">Order Now</a>
+                                <a href="http://mypaycafe.food4me.net/" target="_blank">Order Now</a>
                             </div>
                         </div>
                     </div> 
@@ -84,7 +96,7 @@
     </section>
 
     <section>
-        <div class="ServicesArea">
+        <div class="ServicesArea" id="Services">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
@@ -114,7 +126,7 @@
     </section>
 
     <section>
-        <div class="MenuArea">
+        <div class="MenuArea" id="Menu">
             <div class="container">
                 <div class="MenuHead">
                     <h2>Our Menu</h2>
@@ -128,7 +140,7 @@
     </section>
 
     <section>
-        <div class="GalleryArea">
+        <div class="GalleryArea" id="Gallery">
             <div class="container">
                 <div class="GalleryHead">
                     <h2>Gallery Offers</h2>
@@ -404,7 +416,7 @@
     </section>
 
     <section>
-        <div class="PartnerArea">
+        <div class="PartnerArea" id="Contact">
             <div class="container">
                 <ul>
                     <li><img src="images/Partner-1.jpg"> </li>
@@ -526,10 +538,41 @@
     </footer>
 
   
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://mobulous.s3.ap-south-1.amazonaws.com/Web/js/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
-  
+    
+
+
+    <!-- <script src="js/anchors.navigation.js"></script> -->
+
+    <script type="text/javascript">
+        $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      $(".Header").addClass("Fixed");
+    } else {
+      $(".Header").removeClass("Fixed");
+    }
+});
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+         $(window).scroll(function(){
+            let newUrlIS =  window.location.origin + window.location.pathname
+            history.pushState({}, null, newUrlIS);
+        });
+        $(".Navigation ul li a").click(function(){
+            let newUrlIS =  window.location.origin + window.location.pathname 
+            history.pushState({}, null, newUrlIS);
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    
+
 </body>
 </html>

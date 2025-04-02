@@ -136,6 +136,47 @@ select{cursor: pointer;outline: 0;}
 .Header .Link a{border:2px solid #197a0d;padding:10px 25px;color:#fff;font-size:14px;border-radius:50px;background-color:rgb(255 255 255 / 85%);color:#197a0d;font-weight:700;letter-spacing:.5px}
 .Header .Link a:hover{background-color:#197a0d;color:#fff}
 
+.Header .Navigation{}
+.Header .Navigation ul{}
+.Header .Navigation ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.Header .Navigation ul li a{
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.Header .Navigation ul li a:hover{
+    color: #126905;
+}
+
+
+.Header .Navigation ul li:last-child a{
+    background: #126905;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+.Header .Navigation ul li:last-child a:hover{
+    background-color: #fdb959;
+    color: #000;
+}
+
+.Fixed{animation:0.7s ease 0s normal none 1 running;position:fixed;transition:all 0.5s ease-in-out;background: #fff;top:0;z-index:99}
+
+@keyframes slide-down{
+    0%{opacity:0;transform:translateY(-100%)}
+    100%{opacity:.9;transform:translateY(0)}
+} 
+
+
+.Fixed{}
+.Header.Fixed .Logo img{ width:45px; height:45px }
+
+
 .SliderArea .carousel-item{background-size:cover}
 .SliderArea .SliderBox{min-height:100vh;display:flex;align-items:center}
 .SliderArea .SliderBox h2{text-transform:uppercase;font-weight:600;color:#1f8813;font-size:34px;padding:0 0 10px 0;margin:0 0 20px 0;position:relative}
@@ -145,7 +186,7 @@ select{cursor: pointer;outline: 0;}
 .SliderArea .SliderBox p{color:#fff;font-weight:500;font-size:16px;margin:0 0 20px 0}
 .SliderArea .SliderBox h6{display:flex;align-items:center;color:#fdb959;font-size:22px;margin:0 0 20px 0}
 .SliderArea .SliderBox h6 img{width:60px;margin:0 10px 0 0}
-.SliderArea .SliderBox a{background-color:#126905;color:#fff;padding:10px 20px;border-radius:3px;font-size:14px;text-transform:capitalize;font-weight:400;border:none;letter-spacing:1px;display:inline-block}
+.SliderArea .SliderBox a{background-color:#126905;color:#fff;padding: 10px 30px;border-radius:3px;font-size: 15px;text-transform:capitalize;font-weight:400;border:none;letter-spacing:1px;display:inline-block}
 .SliderArea .SliderBox a:hover{background-color:#fdb959;color:#000}
 .SliderArea .carousel-indicators{bottom:20px}
 .SliderArea .carousel-indicators li{margin:0 3px;border:none;width:10px;height:7px;background-color:#f6a640;opacity:.4;border-radius:50px;transition:0.5s all ease-in-out}
@@ -155,20 +196,20 @@ select{cursor: pointer;outline: 0;}
 .SliderArea .carousel-control-prev i,
 .SliderArea .carousel-control-next i{font-weight:100}
 
-.ServicesArea{padding:50px 0}
+.ServicesArea{padding: 60px 0 50px;}
 .ServicesArea .ServicesBox{text-align:center;padding:0 15px;margin:20px 0 20px 0}
 .ServicesArea .ServicesBox span{display:inline-block;max-width:90px;margin:auto;display:block;transition:0.5s all ease-in-out}
 .ServicesArea .ServicesBox h5{margin:20px 0 10px 0;color:#1f8813;font-size:22px;font-weight:600;letter-spacing:.5px}
 .ServicesArea .ServicesBox p{font-size:15px;color:#929292}
 .ServicesArea .ServicesBox:hover span{transform:scale(1.1)}
-.MenuArea{background-color:#17161c;text-align:center;padding:50px 0 50px}
+.MenuArea{background-color:#17161c;text-align:center;padding: 90px 0 70px;}
 .MenuArea .MenuHead{margin:0 0 50px 0}
 .MenuArea .MenuHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#febb5c;margin:0 0 6px 0}
 .MenuArea .MenuHead p{font-size:16px;color:#fff;letter-spacing:.5px}
 .MenuArea .MenuBody img{transition:0.5s all ease-in-out;width:80%}
 .MenuArea .MenuBody:hover img{transform:scale(1.1)}
 
-.GalleryArea{background-color:#fff;text-align:center;padding:50px 0 30px}
+.GalleryArea{background-color:#fff;text-align:center;padding: 70px 0 30px;}
 .GalleryArea .GalleryHead{margin:0 0 50px 0}
 .GalleryArea .GalleryHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#126905;margin:0 0 6px 0}
 .GalleryArea .GalleryHead p{font-size:16px;color:#2e2e2e;letter-spacing:.5px}
