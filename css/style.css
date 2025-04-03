@@ -202,14 +202,14 @@ select{cursor: pointer;outline: 0;}
 .ServicesArea .ServicesBox h5{margin:20px 0 10px 0;color:#1f8813;font-size:22px;font-weight:600;letter-spacing:.5px}
 .ServicesArea .ServicesBox p{font-size:15px;color:#929292}
 .ServicesArea .ServicesBox:hover span{transform:scale(1.1)}
-.MenuArea{background-color:#17161c;text-align:center;padding: 90px 0 70px;}
+.MenuArea{background-color:#17161c;text-align:center;padding: 90px 0 70px;display: none;}
 .MenuArea .MenuHead{margin:0 0 50px 0}
 .MenuArea .MenuHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#febb5c;margin:0 0 6px 0}
 .MenuArea .MenuHead p{font-size:16px;color:#fff;letter-spacing:.5px}
 .MenuArea .MenuBody img{transition:0.5s all ease-in-out;width:80%}
 .MenuArea .MenuBody:hover img{transform:scale(1.1)}
 
-.GalleryArea{background-color:#fff;text-align:center;padding: 70px 0 30px;}
+.GalleryArea{background-color: #ffffff;text-align:center;padding: 70px 0 30px;}
 .GalleryArea .GalleryHead{margin:0 0 50px 0}
 .GalleryArea .GalleryHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#126905;margin:0 0 6px 0}
 .GalleryArea .GalleryHead p{font-size:16px;color:#2e2e2e;letter-spacing:.5px}
@@ -225,7 +225,7 @@ select{cursor: pointer;outline: 0;}
 .SpecialArea .SpecialBody .SpecialBox img{transition:0.5s all ease-in-out;width:100%}
 .SpecialArea .SpecialBody .SpecialBox:hover img{transform:scale(1.1)}
 
-.TestimonialArea{background-color: #f5f5f5;text-align:center;padding:50px 0 50px}
+.TestimonialArea{background-color: #f5f5f5;text-align:center;padding:50px 0 50px;display: none;}
 .TestimonialArea .TestimonialHead{margin:0 0 50px 0}
 .TestimonialArea .TestimonialHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#126905;margin:0 0 6px 0}
 .TestimonialArea .TestimonialHead p{font-size:16px;color:#000;letter-spacing:.5px}
@@ -242,7 +242,7 @@ select{cursor: pointer;outline: 0;}
 .TestimonialsBox article h3{font-size:34px;margin:0 0 10px 0}
 .TestimonialsBox article ul li{display:inline-block;margin:0 3px;color:#febb5c;font-size:18px}
 
-.BlogArea{background-color:#fff;text-align:center;padding:50px 0 50px}
+.BlogArea{background-color:#fff;text-align:center;padding:50px 0 50px;display: none;}
 .BlogArea .BlogHead{margin:0 0 50px 0}
 .BlogArea .BlogHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#126905;margin:0 0 6px 0}
 .BlogArea .BlogHead p{font-size:16px;color:#000;letter-spacing:.5px}
@@ -253,7 +253,7 @@ select{cursor: pointer;outline: 0;}
 .BlogArea .BlogBody .BlogBox figcaption p{font-size:20px;color:#464646;font-weight:400}
 .BlogArea .BlogBody .BlogBox:hover figure img{transform:scale(1.1)}
 
-.OrderArea{background-image:url(../images/Order.jpg);text-align:center;padding:60px 0;color:#fff}
+.OrderArea{background-image:url(../images/Order.jpg);text-align:center;padding:60px 0;color:#fff;display: none;}
 .OrderArea:before{content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:-webkit-linear-gradient(180deg,#1f8813,#126905);background:-o-linear-gradient(180deg,#1f8813,#126905);background:linear-gradient(180deg,#1f8813,#126905);opacity:.9}
 .OrderArea .container{position:relative}
 .OrderArea span{width:150px;-webkit-animation:ripple-white 1s linear infinite;animation:ripple-white 1s linear infinite;-webkit-transition:.5s;display:inline-block;padding:15px;border-radius:10px}
@@ -274,13 +274,13 @@ select{cursor: pointer;outline: 0;}
     }
 }
 
-.PartnerArea{padding:50px 0}
+.PartnerArea{padding:50px 0;display: none;}
 .PartnerArea ul{display:flex;gap:15px}
 .PartnerArea ul li{border:1px solid #ddd;padding:10px;border-radius:10px;width:100%;resize:block}
 .PartnerArea ul li img{width:85px;margin:auto;display:block;transition:0.5s all ease-in-out}
 .PartnerArea ul li:hover img{transform:scale(1.1)}
 
-.ContactArea{background-color:#fff;padding:0 0 50px}
+.ContactArea{background-color:#fff;padding:0 0 50px;display: none;}
 .ContactArea .ContactHead{margin:0 0 50px 0;text-align:center}
 .ContactArea .ContactHead h2{font-weight:600;text-transform:uppercase;font-size:35px;line-height:1.3;color:#126905;margin:0 0 6px 0}
 .ContactArea .ContactHead p{font-size:15px;color:#000;letter-spacing:.5px}
