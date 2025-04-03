@@ -20,6 +20,8 @@
    footer .FooterArea{ padding:50px 0 20px }
    footer .FooterArea .col-sm-4 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
    footer .FooterArea .col-sm-8 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+   footer .FooterArea .FooterLeft { margin-bottom:30px }
+   footer .FooterArea .FooterRight h3{ margin:0 0 20px 0 }
    footer .FooterArea .FooterRight .Foots { margin-bottom:30px }
 
  
